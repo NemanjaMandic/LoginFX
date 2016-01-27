@@ -11,6 +11,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 /**
  *
@@ -19,8 +21,12 @@ import javafx.scene.control.Label;
 public class FXMLLoginController implements Initializable {
     
     @FXML
-    private Label label;
+    private Label labelStatus;
     
+    @FXML
+    private TextField txtUserName;
+    @FXML
+    private PasswordField txtPassword;
     @FXML
     private void handleButtonAction(ActionEvent event) {
        
